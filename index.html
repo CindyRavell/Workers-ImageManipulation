@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image manipulation</title>
+</head>
+<body style="background-color: blanchedalmond;">
+    <h1>Contrast-Using Workers</h1>
+    
+    <input type="file" accept="image/*" id="fileinput"><br /> 
+    <button style="margin: 10px 0px;" onclick="startprocessing()">Process</button>
+
+    
+    <div style="margin: 70px 0px;">
+        <span id="spinner" style="display:inline-block;">
+            This should be spinning...
+        </span>
+    </div>
+
+    <div>
+        <canvas id="canvas" width="0" height="0"></canvas>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
